@@ -12,10 +12,10 @@ export default function Footer() {
                 <h2 className='text-xl'>Krea AI</h2>
                 </div>
 
-                <div className='flex items-center gap-2'>
+                <div className='flex items-center gap-4'>
                     <h6 className='font-semibold text-lg'>curated by</h6>
-                    <div className='flex items-center gap-1'>
-                        <h1 className='mmd font-extrabold text-xl'>M</h1>
+                    <div className='flex items-center gap-2'>
+                        <h1 className='mmd font-extrabold text-base'>M</h1>
                         <p className='font-bold text-xl'>Mobbin</p>
                     </div>
                 </div>
