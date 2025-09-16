@@ -9,7 +9,6 @@ import {
   HiPhotograph,
   HiPencil,
   HiDocumentText,
-
   HiSupport,
   HiBell,
   HiMoon,
@@ -36,11 +35,10 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full bg-white shadow-sm pb-3 md:pb-0 shadow-blue-700/10 sticky top-0 z-50">
+    <div className="w-full bg-white shadow-sm pb-3 lg:pb-0 shadow-blue-700/10 sticky top-0 z-50">
       <div className="w-[95%] mx-auto px-2">
-        <div className="flex justify-between items-center lg:py-4 pt-3 md:pt-4">
-          {/* Left Section*/}
-          <div className="flex items-center md:gap-4 -ml-4 md:-ml-0">
+        <div className="flex justify-between items-center lg:py-4 pt-3 lg:pt-4">
+          <div className="flex items-center lg:gap-4 -ml-4 lg:-ml-0">
             <Link href="/">
               <Image src="/c0.png" alt="logo" width={50} height={35} />
             </Link>
@@ -57,8 +55,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          
-          <div className="hidden md:flex gap-2 text-lg bg-zinc-100/75 p-2.5 rounded-2xl">
+          <div className="hidden lg:flex gap-2 text-lg bg-zinc-100/75 p-2.5 rounded-2xl">
             {icons.map((item) => (
               <Link key={item.id} href={item.path}>
                 <button
@@ -75,8 +72,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-3">
             <Link
               href="/gallery"
               className="flex items-center gap-2 text-gray-700 bg-zinc-100/75 px-3 py-2 rounded-xl"
@@ -104,18 +100,16 @@ const Navbar = () => {
             />
           </div>
 
-          
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-2xl text-gray-700"
+            className="lg:hidden text-2xl text-gray-700"
           >
             {menuOpen ? <HiX /> : <HiMenu />}
           </button>
         </div>
 
-       
         {menuOpen && (
-          <div className="md:hidden bg-zinc-50 rounded-xl shadow-md mt-2 p-4 space-y-3 mb-3">
+          <div className="lg:hidden bg-zinc-50 rounded-xl shadow-md mt-2 p-4 space-y-3 mb-3">
             <div className="flex gap-2 flex-wrap">
               {icons.map((item) => (
                 <Link key={item.id} href={item.path} className="flex-1">
@@ -133,7 +127,6 @@ const Navbar = () => {
               ))}
             </div>
 
-           
             <div className="flex flex-col gap-2">
               <Link
                 href="/gallery"
